@@ -1,0 +1,14 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "todo-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "sueli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
