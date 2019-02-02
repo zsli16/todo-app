@@ -2,14 +2,12 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/', function (req, res){
-  let todos = ctrl.showTodos();
-  res.send(todos);
-});
+const bodyParser = require('body-parser');
 
-router.post('/', function (req, res){
-  ctrl.addtodo(req);
-  res.statusCode = 200;
-});
+const ctrl = require('./controller.js');
+
+router.get('/todo', ctrl.showtasks);
+
+router.post('/addtask', ctrl.addtask);
 
 module.exports = router;
